@@ -16,21 +16,21 @@ src: local('Plex Regular'), url('./skitsanos-plex/IBMPlexMono-Light.woff') forma
     font-family: 'Plex Code';
     font-style: italic;
     font-weight: 300;
-    src: local('Plex Regular'), url('./skitsanos-plex/IBMPlexMono-LightItalic.woff') format('woff');
+    src: local('Plex Regular'), url('./skitsanos-plex/IBMPlexMono-LightItalic.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Plex';
     font-style: normal;
     font-weight: 300;
-    src: local('Plex Regular'), url('./skitsanos-plex/IBMPlexSans-Light.woff') format('woff');
+    src: local('Plex Regular'), url('./skitsanos-plex/IBMPlexSans-Light.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Plex';
     font-style: italic;
     font-weight: 300;
-    src: local('Plex Italic'), url('./skitsanos-plex/IBMPlexSans-LightItalic.woff') format('woff');
+    src: local('Plex Italic'), url('./skitsanos-plex/IBMPlexSans-LightItalic.ttf') format('truetype');
 }
 
 /*
