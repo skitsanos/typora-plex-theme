@@ -1,15 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,400,400i|IBM+Plex+Sans:100,300,300i,400,600,600i&display=swap');
+
 :root {
     --side-bar-bg-color: #fafafa;
     --control-text-color: #777;
 }
 
-@include-when-export url(https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,400,400i|IBM+Plex+Sans:300,300i,400,600,600i&display=swap');
+@include-when-export url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:300,300i,400,400i|IBM+Plex+Sans:100,300,300i,400,600,600i&display=swap');
 
 @font-face {
-font-family: 'Plex Code';
-font-style: normal;
-font-weight: 300;
-src: local('Plex Regular'), url('./skitsanos-plex/IBMPlexMono-Light.woff') format('woff');
+    font-family: 'Plex Code';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Plex Regular'), url('./skitsanos-plex/IBMPlexMono-Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -54,7 +56,7 @@ html {
 }
 
 body {
-    font-family: "Plex", sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
     color: rgb(51, 51, 51);
     line-height: 1.6;
 }
@@ -130,14 +132,20 @@ h6 code {
 
 h1 {
     padding-bottom: .3em;
-    font-size: 2.25em;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 2.5em;
+    font-weight: 300;
+    color: #600080;
     line-height: 1.2;
-    border-bottom: 1px solid #eee;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
 }
 
 h2 {
     padding-bottom: .3em;
     font-size: 1.75em;
+    color: #47314f;
+    text-transform: uppercase;
     line-height: 1.225;
     border-bottom: 1px solid #eee;
 }
@@ -363,7 +371,7 @@ code {
 .md-image > .md-meta {
     /*border: 1px solid #ddd;*/
     border-radius: 3px;
-    padding: 2px 0px 0px 4px;
+    padding: 2px 0 0 4px;
     font-size: 0.9em;
     color: inherit;
 }
@@ -409,7 +417,6 @@ header, .context-menu, .megamenu-content, footer {
 }
 
 .mac-seamless-mode #typora-sidebar {
-    background-color: #fafafa;
     background-color: var(--side-bar-bg-color);
 }
 
